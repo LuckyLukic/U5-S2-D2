@@ -14,14 +14,6 @@ public class User {
 	private String cognome;
 	private String email;
 	
-	
-	public User(String nome, String cognome, String email) {
-	
-		this.nome = nome;
-		this.cognome = cognome;
-		this.email = email;
-	}
-	
 
 }
 
