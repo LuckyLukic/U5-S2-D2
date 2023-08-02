@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/prenotazione")
-public class ControllerPrenotazione {
+@RequestMapping("/info")
+public class InfoController {
 	
 	@GetMapping("")
 	public ResponseEntity<String> getInfo(@RequestParam String lingua) {
@@ -28,7 +28,7 @@ public class ControllerPrenotazione {
 		}
 		
 		if(response == null) {
-			return ResponseEntity.badRequest().body("Non trovato");
+			return ResponseEntity.badRequest().body("Lingua non supportata");
 			
 		} else return response;
 		
