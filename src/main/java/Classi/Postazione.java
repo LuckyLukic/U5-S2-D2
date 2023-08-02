@@ -16,8 +16,6 @@ public class Postazione {
 	private String descrizione;
 	private TipoPostazione tipoPostazione;
 	private int numeroOccupanti;
-	private Boolean disponibilita;
-	private Prenotazione prenotazione;
 	private String citta;
 
 
